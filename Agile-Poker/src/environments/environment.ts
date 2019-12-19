@@ -3,7 +3,17 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebaseConfig: {
+    apiKey: "AIzaSyC-V8Ojg-9iOXuVZsW-Hz9Y8zPHfHcQkS4",
+    authDomain: "agile-sprint-poker.firebaseapp.com",
+    databaseURL: "https://agile-sprint-poker.firebaseio.com",
+    projectId: "agile-sprint-poker",
+    storageBucket: "agile-sprint-poker.appspot.com",
+    messagingSenderId: "993678956388",
+    appId: "1:993678956388:web:9678bdc2a3a55637a08c71",
+    measurementId: "G-54L49NK2SQ"
+  }
 };
 
 /*
