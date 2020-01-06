@@ -5,6 +5,7 @@ import {LoginModule} from './modules/login/login.module';
 const routes: Routes = [
   {
     path: 'login',
+    component: LoginModule,
     loadChildren: () => import(`./modules/login/login.module`).then(m => m.LoginModule)
   },
   {
@@ -15,7 +16,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [LoginModule, RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule {
